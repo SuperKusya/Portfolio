@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: local('../fonts/Comfortaa/Comfortaa Regular'), local('Comfortaa-Regular'),
+        url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype'),
+        url('../fonts/Comfortaa/Comfortaa-Regular.woff2') format('woff2'),
+        url('../fonts/Comfortaa/Comfortaa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Black Italic'), local('Raleway-BlackItalic'),
+        url('../fonts/Raleway/Raleway-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Raleway/Raleway-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Reey';
+    src: local('Reey Regular'), local('Reey-Regular'),
+        url('../fonts/Reey/Reey-Regular.otf') format('embedded-opentype'),
+        url('../fonts/Reey/Reey-Regular.woff2') format('woff2'),
+        url('../fonts/Reey/Reey-Regular.woff') format('woff'),
+        url('../fonts/Reey/Reey-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -12,91 +12,69 @@
 </head>
 
 <body>
+    <!-- секция-->
     <header class="header">
-        <div class="container">
-            <div class="header__name">Трихачева А.С.</div>
-            <!-- Куся Пепежевна -->
-            <div class="header__job">
-                Верстальщик и веб-разработчик
-            </div>
-            <!-- <div class="header__slogan">
-                                Работаю качественно и вовремя.
-                            </div> -->
-            <div class="social header__social">
-                <a class="social__link" href="#">
-                    <svg class="inline-svg-icon browser">
-                        <use xlink:href="./icon/social.svg#telegram"></use>
-                    </svg>
-                </a>
-                <a class="social__link" href="https://github.com/SuperKys">
-                    <svg class="inline-svg-icon browser">
-                        <use xlink:href="./icon/social.svg#github"></use>
-                    </svg>
-                </a>
-                <a class="social__link" href="#">
-                    <svg class="inline-svg-icon browser">
-                        <use xlink:href="./icon/social.svg#vk"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </header>
-    <section class="about">
-        <div class="container">
-            <div class="about-wrapper">
-                <div class="about__info">
-                    <div class="section-header">
-                        <div class="desc">
-                            Верстаю и программирую сайты. Могу сделать для вас сайт и
-                            запустить его в интернете.
-                        </div>
-                    </div>
-                    <div class="about__skills">
-                        <h3 class="subtitle">Что я умею</h3>
-                    </div>
-                    <ul class="list-skills">
-                        <li class="skill">Создание сайтов</li>
-                        <li class="skill">Верстка сайтов</li>
-                        <li class="skill">Веб-программирование</li>
+        <!-- разметка и ограничение контента -->
+        <div class="container header__layout">
+            <!-- левый блок -->
+            <div class="header__info info">
+                <div class="info__name">Трихачева А.С.</div>
+                <div class="info__job">Верстальщик и веб-разработчик</div>
+                <!-- info__social - для расположения блока -->
+                <!-- social - независимый блок -->
+                <!-- social__link элементы блока social -->
+                <div class="social info__social">
+                    
+                    <a class="social__link" href="https://github.com/SuperKys">
+                        <svg class="inline-svg-icon browser">
+                            <use xlink:href="./icon/social.svg#github"></use>
+                        </svg>
+                    </a>
+                    <a class="social__link" href="https://teleg.run/SuperKusya">
+                        <svg class="inline-svg-icon browser">
+                            <use xlink:href="./icon/social.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a class="social__link" href="mailto:tizahodieslichto@gmail.com">
+                        <svg class="inline-svg-icon browser">
+                            <use xlink:href="./icon/at.svg#email"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="info__desk">
+                    Верстаю и разрабатываю сайты. <br>
+                    Также могу разместить Вам его в интернете.
+                </div>
+                <!--  -->
+                <!-- skills - отдельный блок, который в будущем не используется -->
+                <div class="skills">
+                    <h2 class="skills__title section-title--h2">Мои навыки</h2>
+                    <ul class="skills__list">
+                        <li class="item">Верстать сайты по макету</li>
+                        <li class="item">Писать простую логику на JavaScript</li>
+                        <li class="item">Загрузить сайт на хостинг</li>
                     </ul>
                 </div>
             </div>
+            <!-- правый блок -->
+            <div class="header__image">
+                <img src="./img/about-img.jpg" alt="office laptop Macbook" />
+            </div>
         </div>
-    </section>
-    </div>
-    <div class="header__image">
-        <img src="./img/about-img.jpg" alt="laptop" />
-    </div>
+    </header>
     <section class="portfolio">
         <div class="container">
-            <div class="section-header">
-                <h2 class="title">Портфолио</h2>
-            </div>
-            <div class="list-works">
-                <div class="work-wrapper">
-                    <a href="#" class="link"><img src="./img/work.jpg" alt="laptop" /></a>
+            <h2 class="portfolio__title section-title--h2">Портфолио</h2>
+            <div class="portfolio__works works__list">
+                <div class="works__item">
+                    <a href="./pages/Tatarhata/src/index.html" class="works__link"><img src="./img/work.jpg" alt="laptop" /></a>
                 </div>
-                <div class="work-wrapper">
-                    <a href="#" class="link"><img src="./img/work.jpg" alt="laptop" /></a>
-                </div>
-                <div class="work-wrapper">
-                    <a href="#" class="link"><img src="./img/work.jpg" alt="laptop" /></a>
-                </div>
-                <div class="work-wrapper">
-                    <a href="#" class="link"><img src="./img/work.jpg" alt="laptop" /></a>
+                <div class="works__item">
+                    <a href="#" class="works__link"><img src="./img/work.jpg" alt="laptop" /></a>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="text">За созданием сайта:</div>
-            <div class="desc">
-                обращайтесь
-                <a class="mail" href="mailto: tizahodieslichto@gmail.com">tizahodieslichto@gmail.com</a>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
