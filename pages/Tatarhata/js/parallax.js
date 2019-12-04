@@ -1,0 +1,44 @@
+$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#fff',
+            'bulletsColor': 'pink',
+            'position': 'right',
+            'tooltips': ['Home', 'About', 'Events', 'Stream', 'Gallery', 'Goodbye']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+    });
+
+    function alterScrollable() {
+        let width = document.body.clientWidth,
+            block = document.querySelector('.about__bg');
+        if (width < 640) {
+            block.classList.add('pp-scrollable');
+        } else {
+            block.classList.remove('pp-scrollable');
+        }
+    }
+    alterScrollable();
+    window.addEventListener('resize', function() {
+        alterScrollable();
+    });
+});
+
