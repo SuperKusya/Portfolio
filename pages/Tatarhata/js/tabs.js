@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
         let numbers = document.querySelectorAll('.number'),
             cards = document.querySelectorAll('.card'),
-            listNumbers = document.querySelector('.list-events'),
+            listNumbers = document.querySelector('.timeline__events'),
             clown = document.querySelector('.pepeClown');
 
         listNumbers.addEventListener('click', function(event) {
@@ -29,12 +29,12 @@ window.addEventListener('DOMContentLoaded', function() {
             card.classList.add('show');
         }
 
-        // function moveClown(index) {
-        //     let width = document.body.clientWidth;
-        //     if (width < 640) {
-        //         clown.style.marginTop = 22.5 * index + "%";
-        //     } else {
-        //         clown.style.marginLeft = 22.5 * index + "%";
-        //     }
-        // }
+        function moveClown(index) {
+            let width = document.body.clientWidth;
+            if (width < 640) {
+                clown.style.marginTop = 22.5 * index + "%";
+            } else {
+                clown.style.marginLeft = 22.5 * index + "%";
+            }
+        }
 });

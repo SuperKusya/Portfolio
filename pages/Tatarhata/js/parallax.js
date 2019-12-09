@@ -26,19 +26,5 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){},
 		afterRender: function(){},
     });
-
-    function alterScrollable() {
-        let width = document.body.clientWidth,
-            block = document.querySelector('.about__bg');
-        if (width < 640) {
-            block.classList.add('pp-scrollable');
-        } else {
-            block.classList.remove('pp-scrollable');
-        }
-    }
-    alterScrollable();
-    window.addEventListener('resize', function() {
-        alterScrollable();
-    });
 });
 

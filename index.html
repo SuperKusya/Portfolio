@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container header__layout">
-            <div class="header__info info">
-                <div class="info__name">Трихачева А.С.</div>
-                <div class="info__job">Верстальщик и веб-разработчик</div>
-                <div class="social info__social">
-                    <a class="social__link" href="https://github.com/SuperKys">
-                        <svg class="inline-svg-icon browser">
-                            <use xlink:href="./icon/social.svg#github"></use>
-                        </svg>
-                    </a>
-                    <a class="social__link" href="https://teleg.run/SuperKusya">
-                        <svg class="inline-svg-icon browser">
-                            <use xlink:href="./icon/social.svg#telegram"></use>
-                        </svg>
-                    </a>
-                    <a class="social__link" href="mailto:tizahodieslichto@gmail.com">
-                        <svg class="inline-svg-icon browser">
-                            <use xlink:href="./icon/email.svg#email"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="info__desk">
-                    Верстаю и разрабатываю сайты. <br>
-                    Также могу разместить Вам его в интернете.
-                </div>
-                <div class="skills">
-                    <h2 class="skills__title section-title--h2">Мои навыки</h2>
-                    <ul class="skills__list">
-                        <li class="skills__item">Верстать сайты по макету</li>
-                        <li class="skills__item">Писать простую логику на JavaScript</li>
-                        <li class="skills__item">Загрузить сайт на хостинг</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header__image">
-                <img src="./img/about-img.jpg" alt="office laptop Macbook" />
-            </div>
+      <div class="container header__layout">
+        <div class="header__info info">
+          <div class="info__name">Трихачева А.С.</div>
+          <div class="info__job">Верстальщик и веб-разработчик</div>
+          <div class="social info__social">
+            <a
+              class="social__link"
+              href="https://github.com/SuperKys"
+              target="_blank"
+            >
+              <svg class="inline-svg-icon browser">
+                <use xlink:href="./icon/social.svg#github"></use>
+              </svg>
+            </a>
+            <a
+              class="social__link"
+              href="https://teleg.run/SuperKusya"
+              target="_blank"
+            >
+              <svg class="inline-svg-icon browser">
+                <use xlink:href="./icon/social.svg#telegram"></use>
+              </svg>
+            </a>
+            <a
+              class="social__link"
+              href="mailto:tizahodieslichto@gmail.com"
+              target="_blank"
+            >
+              <svg class="inline-svg-icon browser">
+                <use xlink:href="./icon/email.svg#email"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="info__desk">
+            Верстаю и разрабатываю сайты. <br />
+            Также могу разместить Вам его в интернете.
+          </div>
+          <div class="skills">
+            <h2 class="skills__title section-title--h2">Что я умею</h2>
+            <ul class="skills__list">
+              <li class="skills__item">Верстать сайты по макету</li>
+              <li class="skills__item">Писать простую логику на JavaScript</li>
+              <li class="skills__item">Загружать сайт на хостинг</li>
+            </ul>
+          </div>
         </div>
+        <div class="header__image">
+          <img src="./img/about-img.jpg" alt="office laptop Macbook" />
+        </div>
+      </div>
     </header>
     <section class="portfolio">
-        <div class="container">
-            <h2 class="portfolio__title section-title--h2">Портфолио</h2>
-            <div class="portfolio__works works__list">
-                <div class="works__item">
-                    <a href="./pages/Tatarhata/src/index.html" class="works__link"><img src="./img/work.jpg" alt="laptop" /></a>
-                </div>
-                <div class="works__item">
-                    <a href="#" class="works__link"><img src="./img/work.jpg" alt="laptop" /></a>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="portfolio__title section-title--h2">Портфолио</h2>
+        <div class="portfolio__works works__list">
+          <div class="works__item">
+            <a href="./pages/Tatarhata/" class="works__link">
+              <img src="./img/work.jpg" alt="laptop" target="_blank" />
+            </a>
+          </div>
+          <div class="works__item">
+            <a href="#" class="works__link">
+              <img src="./img/work1.jpg" alt="laptop" target="_blank" />
+            </a>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="footer__copyright">&copy; 2019 Pekusya.site</div>
-        <img class="footer__logo logo" src="./img/logo.png" alt="logo Pepega">
+      <div class="footer__copyright">&copy; 2019 Pekusya.site</div>
+      <div class="logo footer__logo">
+        <a class="logo__link" href="/">
+          <img class="logo__img" src="./img/logo.png" alt="logo Pepega" />
+        </a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

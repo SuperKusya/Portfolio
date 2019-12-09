@@ -101,9 +101,10 @@ img {
 
 #loading-image {
   position: absolute;
-  top: 43%;
-  left: 46%;
+  top: 50%;
+  left: 50%;
   z-index: 100;
+  margin: -50px 0 0 -50px;
 }
 
 .start {
@@ -188,7 +189,7 @@ img {
 }
 
 .info__town {
-  margin-top: -50px;
+  margin-top: -0.6em;
   font-size: 4em;
   line-height: 1;
   font-family: "Reey";
@@ -213,6 +214,11 @@ img {
 
 .timer-numbers .timer-wrapper {
   min-width: 50px;
+}
+
+.timer-numbers span {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
 }
 
 .social__list {
@@ -258,10 +264,21 @@ img {
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;
+  margin: 0;
 }
 
 .section__header .subtitle {
   text-align: center;
+}
+
+.about {
+  padding-top: 1em;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.about .title {
+  margin-bottom: 0.5em;
 }
 
 .about__bg {
@@ -312,20 +329,53 @@ img {
   max-width: 15em;
 }
 
-.events .header_section {
-  margin-bottom: 40px;
-}
-
-.events-bg {
+.events__bg {
   background: url("../img/bg/bg.jpg") center/cover no-repeat;
 }
 
-.list-events {
+.events {
+  padding-top: 1em;
+  height: 100%;
+}
+
+.events .section__header {
+  margin-bottom: 1em;
+}
+
+.deviver {
+  width: 50px;
+  margin: 10px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 25px 13px yellow;
+          box-shadow: 1px 1px 25px 13px yellow;
+}
+
+.timeline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.timeline .pepeClown {
+  width: 10%;
+  -webkit-transition: margin-left 2s;
+  transition: margin-left 2s;
+}
+
+.timeline__events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -337,7 +387,7 @@ img {
   margin-bottom: 50px;
 }
 
-.number {
+.timeline__events .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,15 +397,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 50px;
   font-weight: bolder;
-  border: 5px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   outline: none;
+  width: 50px;
+  height: 50px;
 }
 
 .number:hover,
@@ -390,45 +438,17 @@ img {
   color: yellow;
 }
 
-.timeline {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.pepeClown {
-  width: 10%;
-  -webkit-transition: margin-left 2s;
-  transition: margin-left 2s;
-}
-
-.deviver {
-  width: 50px;
-  margin: 10px;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 25px 13px yellow;
-          box-shadow: 1px 1px 25px 13px yellow;
-}
-
-.timeline {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.event-card {
+.timeline__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 240px;
   font-size: 150%;
 }
 
 .card {
-  height: 50px;
   line-height: 1.5;
   text-align: center;
   color: white;
@@ -465,27 +485,20 @@ img {
       align-content: center;
 }
 
-.gallery-bg {
-  height: 100%;
+.gallery__bg {
   background: url("../img/bg/bg-gallery.jpg") center/cover no-repeat;
 }
 
-.border-slider {
-  position: relative;
-  width: 50%;
-  margin-right: 10%;
-  margin-left: 10%;
+.gallery {
+  height: 100%;
 }
 
-.list-photos {
-  position: absolute;
-  top: 0;
-  top: 8%;
-  left: 10%;
-  width: 89%;
+.gallery .container {
+  height: 100%;
 }
 
 .slider {
+  height: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,27 +509,39 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 85%;
+}
+
+.slider .slider__border {
+  position: relative;
+  width: 30em;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.slider .slider__photos {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 89%;
+}
+
+.slider .slider__photos .section__header {
+  margin-top: 30%;
 }
 
 .mySlides {
   display: none;
 }
 
-.border {
-  width: 50%;
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-.border-img {
-  position: absolute;
-}
-
 .arrow-right,
 .arrow-left {
-  width: 10%;
   cursor: pointer;
+  width: 10%;
+}
+
+.arrow-right img,
+.arrow-left img {
+  display: block;
 }
 
 .footer__bg {
@@ -543,6 +568,9 @@ img {
 }
 
 @media screen and (max-width: 640px) {
+  :root {
+    font-size: calc(0.4em + 1vw);
+  }
   .start__top,
   #pp-nav {
     display: none;
@@ -550,15 +578,28 @@ img {
   .header-layout .version-site {
     display: none;
   }
-  .start_center {
+  .start__center {
     padding-top: 50px;
-    padding-bottom: 50px;
   }
-  .event-card {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 150px;
+  .info__date {
+    font-size: 1.8em;
+  }
+  .timer-numbers {
+    font-size: 2rem;
+  }
+  .timeline {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .timeline__events {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about .list__items {
     -webkit-box-orient: vertical;
@@ -568,29 +609,16 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about .list__items .item {
     max-width: 100%;
-    margin-bottom: 15%;
-    padding-right: 5%;
-    padding-left: 5%;
+    margin-bottom: 2em;
   }
-  .border-slider {
-    position: relative;
-    width: 100%;
-    margin-right: 1%;
-    margin-left: 1%;
-  }
-  .timeline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .list-events {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 0;
+  .slider .slider__border {
+    margin-right: 0%;
+    margin-left: 0%;
   }
 }

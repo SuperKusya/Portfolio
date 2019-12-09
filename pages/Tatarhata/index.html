@@ -158,7 +158,7 @@
                 </div>
             </section>
         </div>
-        <div class="section events-bg">
+        <div class="section events__bg">
             <section class="events" id="eventsBg">
                 <div class="container">
                     <div class="section__header">
@@ -167,9 +167,9 @@
                     </div>
                     <div class="timeline">
                         <div class="pepeClown">
-                            <img src="./img/timeline/santaRun.gif" alt="emote pepeClown">
+                        <img src="./img/timeline/santaRun.gif" alt="emote pepeClown">
                         </div>
-                        <div class="list-events">
+                        <div class="timeline__events">
                             <div class="number" tabindex="-1">1</div>
                             <div class="deviver"></div>
                             <div class="number" tabindex="-2">2</div>
@@ -180,7 +180,7 @@
                             <div class="deviver" tabindex=""></div>
                             <div class="number" tabindex="-5">5</div>
                         </div>
-                        <div class="event-card">
+                        <div class="timeline__card">
                             <div class="card show">
                                 <ul class="list-thing">
                                     <li class="thing">встречаемся</li>
@@ -216,6 +216,13 @@
                                     <li class="thing">прощаемся</li>
                                 </ul>
                             </div>
+                            <div class="card hide">
+                                <ul class="list-thing">
+                                    <li class="thing">кушаем</li>
+                                    <li class="thing">кушаем</li>
+                                    <li class="thing">прощаемся</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -224,24 +231,26 @@
         <div class="section video-bg">
             <section class="video">
                 <div class="container video_layout">
-                    <iframe src="https://player.twitch.tv/?channel=arthurka_o" frameborder="0" allowfullscreen="true"
-                        scrolling="no"></iframe>
+                    <iframe id="twitch-iframe" src="https://player.twitch.tv/?channel=arthurka_o" frameborder="0" allowfullscreen="true"
+                        scrolling="no" onload="detectIframeScroll()"></iframe>
                     <a href=" https://www.twitch.tv/arthurka_o?tt_content=text_link&tt_medium=live_embed"></a></div>
             </section>
         </div>
-        <div class="section gallery-bg">
+        <div class="section gallery__bg">
             <section class="gallery">
                 <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Галерея</h2>
-                    </div>
-                    <div class="slider">
+                    <div class="gallery__slider slider">
                         <div class="arrow-left" onclick="plusSlides(-1)">
                             <img src="./img/arrow-l.png" alt="arrow-left">
                         </div>
-                        <div class="border-slider">
+                        <div class="slider__border">
                             <img src="./img/paint.png" alt="paint">
-                            <div class="list-photos">
+                            <div class="slider__photos">
+                                <div class="photo mySlides">
+                                    <div class="section__header">
+                                        <h2 class="title">Галерея</h2>
+                                    </div>
+                                </div>
                                 <div class="photo mySlides">
                                     <img src="./img/photos/batuti-2.jpg" alt="people on trampolines">
                                 </div>
@@ -264,6 +273,9 @@
                                 </div>
                                 <div class="photo mySlides">
                                     <img src="./img/photos/jopa.jpg" alt="four men near the Kazanka river">
+                                </div>
+                                <div class="photo mySlides">
+                                     <img src="./img/photos/batuti-2.jpg" alt="people on trampolines">
                                 </div>
                             </div>
                         </div>
@@ -291,6 +303,12 @@
         $(window).load(function() {
         $('#loading').hide();
      });
+   </script>
+   <script>
+       function detectIframeScroll() {
+        var elementIframe = document.getElementById("twitch-iframe");
+        document.getElementById("twitch-iframe").style.height = elementIframe.contentDocument.documentElement.scrollHeight + "px";
+       }
    </script>
 </body>
 
