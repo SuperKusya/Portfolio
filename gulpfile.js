@@ -37,7 +37,7 @@ const path = {
         favicon: 'app/favicon/*.*'
 
     },
-    clean: './dist/',
+    clean: 'dist/',
     deploy: 'dist/**/*'
 }
 
