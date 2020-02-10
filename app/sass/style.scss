@@ -1,6 +1,7 @@
 :root {
-  font-size: calc(0.5em + 1vw);
   box-sizing: border-box;
+
+  font-size: calc(0.5em + 1vw);
 }
 
 *,
@@ -24,6 +25,9 @@ main {
 /* Remove the border on images inside links in IE 10. */
 
 img {
+  max-width: 100%;
+  height: auto;
+
   border-style: none;
 }
 
@@ -31,9 +35,8 @@ body {
   margin: 0;
   padding: 0;
 
-  color: #161616;
   font-family: Roboto, sans-serif;
-
+  color: #161616;
 }
 
 img {
@@ -47,11 +50,13 @@ img {
 }
 
 .header {
+  min-height: 650px;
   padding-top: 5em;
   padding-bottom: 5em;
 
   font-size: 1rem;
   line-height: 1.2;
+
 
   &__layout {
     display: flex;
@@ -194,24 +199,30 @@ img {
 @media (max-width: 700px) {
   body,
   .header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
     font-size: 1.3rem;
-  }
 
-  .header__layout {
-    flex-direction: column;
-  }
+    &__image {
+      flex: 1 1 auto;
+      max-width: 100%;
+      img {
+        display: block;
+      }
+    }
+    &__layout {
+      flex-direction: column;
+    }
 
-  .header__info {
-    margin-bottom: 1em;
+    &__info {
+      flex: 1 1 auto;
+      margin-bottom: 1em;
+    }
   }
 
   .header__info + .header__image {
     margin-left: 0;
-  }
-
-  .header {
-    padding-top: 1em;
-    padding-bottom: 1em;
   }
 
   .works__list {
