@@ -92,9 +92,7 @@ img {
   &__job {
     margin-bottom: 30px;
   }
-  &__desk {
-    margin-bottom: 30px;
-  }
+
 }
 
 .social {
@@ -132,6 +130,18 @@ img {
     margin-bottom: 10px;
 
     text-align: left;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__descr {
+    font-size: 0.8rem;
+    display: block;
+    color: rgb(114, 111, 111);
   }
 
   &__list {
